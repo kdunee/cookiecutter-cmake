@@ -3,7 +3,7 @@ include_directories(${CMAKE_SOURCE_DIR})
 
 set(COMPILER_WARNINGS_FLAGS "-Wall -Wextra -Werror")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMPILER_WARNINGS_FLAGS} -std=c11")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILER_WARNINGS_FLAGS} -std=c++14")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILER_WARNINGS_FLAGS} -std=c++11")
   
 option(USE_ASAN "use address sanitizer" OFF)
 if(USE_ASAN)

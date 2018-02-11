@@ -7,7 +7,7 @@ project({{cookiecutter.project_name}}
 include(common_setup.cmake)
 
 add_library(${CMAKE_PROJECT_NAME} code.cpp)
-find_package(Threads REQUIRED)
+find_package(Threads)
 target_link_libraries(${CMAKE_PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT})
 
 option(BUILD_BENCHMARK "build benchmarks" OFF)
