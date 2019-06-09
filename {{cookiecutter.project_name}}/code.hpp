@@ -1,6 +1,3 @@
-#ifndef __CODE_HPP__
-#define __CODE_HPP__
+#pragma once
 
 void noop(void);
-
-#endif
